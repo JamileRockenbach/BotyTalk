@@ -6,7 +6,7 @@ from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.document_loaders import YoutubeLoader
 from langchain_community.document_loaders import PyPDFLoader
 load_dotenv ()
-api_key = os.getenv('GROQ_API_KAY')
+api_key = os.getenv('GROQ_API_KEY')
 os.environ['GROQ_API_KEY'] = api_key
 chat = ChatGroq(model='llama-3.1-8b-instant')
 
@@ -70,7 +70,7 @@ def principal():
     print('Bem-vindo(a) ao BotyTalk! (Digite "x" a qualquer momento para sair)\n')
     
     nome = input('Diga seu nome: ')
-    print(f"\nOlá, {nome}! Espero que goste da experiência do BotyTalk. Chame nosso Boty quando precisar de ajuda! 👻")
+    print(f"\nOlá, {nome}! Espero que goste da experiência do BotyTalk. Chame nosso Boty quando precisar de ajuda!")
 
     texto_selecao = '''
 Como você quer conversar com o Boty?
@@ -100,7 +100,7 @@ Como você quer conversar com o Boty?
                 continue
             break
         else:
-            print('⚠️ Digite um valor entre 1 e 3!')
+            print('Digite um valor entre 1 e 3!')
 
     mensagens = []
     print("\nPronto! Agora você pode conversar com o Boty sobre o conteúdo que foi carregado.")
@@ -111,7 +111,7 @@ Como você quer conversar com o Boty?
     while True:
         pergunta = input('Você: ')
         if pergunta.lower() == 'x':
-            print('\n✅ Muito obrigado por utilizar o BotyTalk! Aqui está o histórico completo da conversa:')
+            print('\nMuito obrigado por utilizar o BotyTalk! Aqui está o histórico completo da conversa:')
             for papel, mensagem in mensagens:
                 print(f'{papel.capitalize()}: {mensagem}')
             break
