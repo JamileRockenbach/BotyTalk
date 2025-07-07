@@ -1,4 +1,4 @@
-### BotyTalk — Assistente de Estudos com Python e IA
+### BotyTalk — Assistente de Estudos com Python e IA 💡
 
 O **BotyTalk** é um assistente de estudos no terminal que conversa com você usando **inteligência artificial**, com base em um conteúdo carregado de:
 
@@ -14,7 +14,7 @@ Simples, amigável e poderoso para aprender qualquer assunto com uma ajudinha do
 
 Jamile Rockenbach Ferreira, aluna do curso de Ciência da Computação. Esse projeto foi criado com a ajuda do curso Asimov (curso de Python para IA: Do zero ao primeiro chatbot), foi uma experiência prática enriquecedora!
 
-## ✨ Funcionalidades
+## Funcionalidades:
 
 - 🧠 Usa **LLM da Groq** (LLaMA 3.1 via LangChain)
 - 🌐 Carrega conteúdo de **sites**
@@ -25,7 +25,7 @@ Jamile Rockenbach Ferreira, aluna do curso de Ciência da Computação. Esse pro
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas:
 
 - Python 3
 - [LangChain](https://www.langchain.com/)
